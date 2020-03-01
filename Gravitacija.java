@@ -4,8 +4,7 @@ public class Gravitacija {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double visina = sc.nextInt();
-
-        System.out.println(izracun(visina));
+        izpis(visina);
         System.out.println("OIS je zakon!");
     }
     public static double izracun(double v) {
@@ -14,5 +13,10 @@ public class Gravitacija {
         double r = Math.pow(6.371*10, 6);
         double a = (C*M)/((r+v)*(r+v));
         return a;
+    }
+    public static double izpis(double v) {
+        System.out.println(v);
+        System.out.println(izracun(v));
+        return 0;
     }
 }
